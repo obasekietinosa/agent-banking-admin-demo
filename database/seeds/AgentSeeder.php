@@ -11,6 +11,6 @@ class AgentSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\Agent::class, 50)->create();
     }
 }

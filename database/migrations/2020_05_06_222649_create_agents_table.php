@@ -21,7 +21,8 @@ class CreateAgentsTable extends Migration
             $table->string('city');
             $table->string('state');
             $table->string('zip_code');
-            $table->string('geolocation');
+            $table->double('longitude', 10, 6);
+            $table->double('latitude', 10, 6);
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 tasks:
   - init: mysql -u root -e "create database agent_banking" && cp .env.example .env && composer install && npm i && php artisan key:generate
     command: php artisan migrate --seed && php artisan serve
+    command: npm run dev
 image:
   file: .gitpod.Dockerfile
 ports:
