@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', str_replace('https://', 'https://8000-', env('GITPOD_WORKSPACE_URL'))),
 
     'asset_url' => env('ASSET_URL', null),
 
