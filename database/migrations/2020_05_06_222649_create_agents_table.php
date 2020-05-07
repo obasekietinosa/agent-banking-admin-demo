@@ -15,13 +15,13 @@ class CreateAgentsTable extends Migration
     {
         Schema::create('agents', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
+            $table->string('title');
             $table->text('description');
             $table->text('address');
-            $table->text('city');
-            $table->text('state');
-            $table->text('zip_code');
-            $table->text('geolocation');
+            $table->string('city');
+            $table->string('state');
+            $table->string('zip_code');
+            $table->string('geolocation');
             $table->timestamps();
         });
     }
