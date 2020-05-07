@@ -4,6 +4,6 @@ tasks:
     command: npm run dev
 image:
   file: .gitpod.Dockerfile
-ports:
-  - port: 8000
-    onOpen: open-browser
+# ports:
+#   - port: 8000
+#     onOpen: open-browser
