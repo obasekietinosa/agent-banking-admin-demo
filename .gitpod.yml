@@ -1,5 +1,5 @@
 tasks:
-  - init: composer install && npm i
-    command: php artisan migrate && php artisan serve
+  - init: mysql -u root -e "create database agent_banking" && cp .env.example .env && composer install && npm i && php artisan key:generate
+    command: php artisan migrate --seed && php artisan serve
 image:
   file: .gitpod.Dockerfile
