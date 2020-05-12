@@ -1,3 +1,4 @@
+#!/bin/bash
 mysql -u root -e "create database agent_banking"
 cp .env.example .env
 sed -i "s|APP_URL=|APP_URL=${GITPOD_WORKSPACE_URL}|g" .env
