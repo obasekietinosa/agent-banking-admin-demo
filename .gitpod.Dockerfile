@@ -4,7 +4,7 @@ USER gitpod
 
 COPY .gitpod-init.sh /usr/bin/gitpod-init
 
-RUN sudo chmod +X /usr/bin/gitpod-init
+RUN sudo chmod a+x /usr/bin/gitpod-init
 
 RUN sudo chmod 7777 /usr/bin/gitpod-init
 
